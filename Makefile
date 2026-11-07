@@ -7,7 +7,7 @@ SRCS           = ft_printf.c \
 						src/ft_printf_utils.c
 all:
 	make -C ../libft
-	clang -Wall -Wextra -Wextra -Werror -c ${SRCS}
+	clang -Wall -Wextra -Werror -c ${SRCS}
 	cp ../libft/libft.a ${FTPRINTF}
 	ar rcs ${FTPRINTF} *.o
 
